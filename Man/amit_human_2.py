@@ -16,9 +16,11 @@ from tensorflow.keras.models import load_model
 # =========================
 # CONFIG
 # =========================
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "xception_phase1_best.h5")
-IMG_SIZE = 224
+MODEL_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../../models/xception_phase1_best.h5")
+)
 
+IMG_SIZE = 224
 _model = None
 
 
