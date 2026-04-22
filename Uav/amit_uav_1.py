@@ -13,7 +13,9 @@ from tensorflow.keras.models import load_model
 # =========================
 # CONFIG
 # =========================
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "fire_unet_final.h5")
+MODEL_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../../models/fire_unet_final.h5")
+)
 IMG_SIZE = 256
 
 _model = None
